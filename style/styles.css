@@ -1,0 +1,12 @@
+*{
+    font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+.alu{
+    gap: 54px;
+}
+.text{
+    font-size: 14px;
+}

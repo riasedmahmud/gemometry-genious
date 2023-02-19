@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geomaetry Genious</title>
+     <link rel="stylesheet" href="style/styles.css">
+     <!-- pooins css -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<!-- ....... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="conatiner-fluid mt-4 mx-4">
+        <nav class="navbar" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand"><span class="fw-bold fs-4 text">Interactive </span><br>
+                   <p class="text-secondary-emphasis fs-6 text"> Geometry Genius</p></a>
+                  <button class="btn btn-primary py-2 px-5" type="submit">Blog</button>
+              </div>
+        </nav>
+    </header>
+    <section class="mt-5 "> 
+      <div class="alu d-flex justify-content-center row g-2">
+         <!-- triangle  -->
+        <div class="card" style="width: 18rem;">
+            <div class="d-flex justify-content-center mt-2">
+                <img  src="image/triangle.png" class="card-img-top w-50" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">triangle</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = 0.5 x b x h</p></div>
+              
+              <div class="mx-4 text-center mb-3">
+                 <label class="text-right" for="">cm</label>
+                 <input class="w-25 " id="box1" type="text" placeholder="b">
+                 <label for="">cm</label>
+                 <input class="w-25 " id="box2" type="text" placeholder="h">
+              </div>
+              <div class="d-flex justify-content-center"><button id="Calculation" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+               <!-- rectangle -->
+          <div class="card" style="width: 18rem;">
+            <div class="d-flex justify-content-center">
+                <img  src="image/rectangle.png" class="card-img-top w-50 mt-2" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold mt-3">Rectangle</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = W x I</p></div>
+              
+              <div class="mx-4 text-center mb-3">
+                 <label class="text-right" for="">cm</label>
+                 <input class="w-25 " id="label1" type="text" placeholder="W">
+                 <label for="">cm</label>
+                 <input class="w-25 " type="text" id="label2" placeholder="I">
+              </div>
+              <div class="d-flex justify-content-center"><button id="reactcalc" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+          <!-- Parallelogram -->
+          <div class="card" style="width: 18rem;">
+             <div class="d-flex justify-content-center">
+                <img  src="image/Parallelogram.png" class="card-img-top w-50 mt-2" alt="...">
+             </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold mt-3">Parallelogram</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = b x h</p></div>
+              
+              <div class="mx-4 text-center mb-3 mt-3">
+                 <label class="text-right" for="">cm</label>
+                 <input id="div1" class="w-25 " type="text" placeholder="b">
+                 <label  for="">cm</label>
+                 <input id="div2" class="w-25 " type="text" placeholder="h">
+              </div>
+              <div class="d-flex justify-content-center mt-4"><button id="pcalc" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+                <!-- area calculation  -->
+          <div class="card conatiner-fluid" style="width: 18rem;">
+             <p class="fw-bold text-center mt-2 text-decoration-underline">Area Calculation</p>
+             <!-- triangle -->
+             <div class="mt-3">
+                <label for="">1.triangle</label>
+                <input class="border border-0 w-25" id="result" />
+                <button  class="btn btn-primary px-1 py-1 mx-2"><span class="text">convert to m2</span></button>
+             </div>
+             <!-- Rectangle -->
+             <div class="mt-3">
+                <label for="">2.Rectangle</label>
+                <input class="border border-0 w-25" id="result2" />
+                <button class="btn btn-primary px-1 py-1 "><span class="text">convert to m2</span></button>
+             </div>
+             <!-- Parallelogram -->
+             <div class="mt-2">
+                <label for="">3.Pgram</label>
+                <input class="border border-0 w-25" id="result3" />
+                <button class="btn btn-primary px-1 py-1 mx-2  "><span class="text">convert to m2</span></button>
+             </div>
+             <!-- Rhombus -->
+             <div class="mt-2">
+                <label for="">4.Rhombus</label>
+                <input class="border border-0 w-25" id="result4" />
+                <button class="btn btn-primary px-1 py-1 mx-0"><span class="text">convert to m2</span></button>
+             </div>
+                    <!-- Pentagon -->
+             <div class="mt-2">
+                <label for="">5.Pentagon</label>
+                <input class="border border-0 w-25" id="result5" />
+                <button class="btn btn-primary px-1 py-1  "><span class="text">convert to m2</span></button>
+             </div>
+              <!-- Ellipse -->
+             <div class="mt-2">
+                <label for="">6.Ellipse</label>
+                <input class="border border-0 w-25" id="result6" />
+                <button class="btn btn-primary px-1 py-1 mx-2 "><span class="text">convert to m2</span></button>
+             </div>
+             
+             
+                
+            </div>
+          </div>
+      </div>
+    </section>
+ 
+    <section class="mt-3">
+      <div class="alu d-flex justify-content-center row g-2">
+        <!-- Rhombus  -->
+        <div class="card" style="width: 18rem;">
+            <div class="d-flex justify-content-center mt-2">
+                <img  src="image/Rhombus.png" class="card-img-top w-50" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Rhombus</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = 0.5 x d1 x d2</p></div>
+              
+              <div class="mx-4 text-center mb-3">
+                 <label class="text-right" for="">cm</label>
+                 <input class="w-25 " id="input1" type="text" placeholder="d1">
+                 <label for="">cm</label>
+                 <input class="w-25 " id="input2" type="text" placeholder="d2">
+              </div>
+              <div class="d-flex justify-content-center"><button id="rombcalc" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+               <!--Pentagon-->
+          <div class="card" style="width: 18rem;">
+            <div class="d-flex justify-content-center">
+                <img  src="image/Pentagon.png" class="card-img-top w-50 mt-2" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Pentagon</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = 0.5 x p x b</p></div>
+              
+              <div class="mx-4 text-center mb-3">
+                 <label class="text-right" for="">cm</label>
+                 <input class="w-25 " id="class1" type="text" placeholder="p">
+                 <label for="">cm</label>
+                 <input class="w-25 " id="class2" type="text" placeholder="b">
+              </div>
+              <div class="d-flex justify-content-center"><button id="penclac" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+          <!-- Ellipse -->
+          <div class="card" style="width: 18rem;">
+             <div class="d-flex justify-content-center">
+                <img  src="image/Ellipse.png" class="card-img-top w-50 mt-4" alt="...">
+             </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold mt-3">Ellipse</h5>
+              <div class="d-flex justify-content-center mb-3"><p class="card-text">Area (A) = 𝝅ab</p></div>
+              
+              <div class="mx-4 text-center mb-3">
+                 <label class="text-right" for="">cm</label>
+                 <input class="w-25 " id="ell1" type="text" placeholder="a">
+                 <label for="">cm</label>
+                 <input class="w-25 " id="ell2" type="text" placeholder="b">
+              </div>
+              <div class="d-flex justify-content-center"><button id="ecalc" class="btn btn-primary px-5 py-2">calculate</button></div>
+            </div>
+          </div>
+          <div  style="width: 18rem;">
+            
+           </div>
+      </div>
+    </section >
+    <!-- script js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/multiply.js"></script>
+    
+  </body>
+</html>
